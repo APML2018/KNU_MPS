@@ -445,7 +445,7 @@
 !  together with ones for warm rain species including clouds and 
 !  rain. cloud condensation nuclei (ccn) is also predicted. The scheme also
 !  prognose the graupel density, in turn, modifies graupel characteristics
-!  such as the fall velocity–diameter and mass–diameter relationships 
+!  such as the fall velocity-diameter and mass-diameter relationships 
 !  of graupel.  
 !
 !  Coded by Sun-Young Park and Kyo-Sun Lim (Kyungpook National Univ.) Fall 2024
@@ -1312,7 +1312,6 @@
               nrs(i,k,1) = den(i,k)*qrs(i,k,1)*lamdr_tmp(i,k)**dmr/pidnr
               n0r(i,k) = (1./g1pmr)*DBLE(nrs(i,k,1))*lamdr_tmp(i,k)**(mur+1)
             endif
-
           endif
           if(qci(i,k,1).ge.qmin .and. nci(i,k,1) .ge. ncmin ) then
             lamdc_tmp(i,k) = exp(log((((pidnc)*nci(i,k,1))                       &
